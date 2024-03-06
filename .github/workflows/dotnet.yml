@@ -16,16 +16,19 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: 3.1 # Adjust the version based on your project requirements
+          dotnet-version: "8.0.201" # Adjust the version based on your project requirements
 
       - name: Restore dependencies
         run: dotnet restore
+        working-directory: ./WebApp
 
       - name: Build
         run: dotnet build --configuration Release
+        working-directory: ./WebApp
 
       - name: Test
         run: dotnet test --configuration Release --no-build
+        working-directory: ./InstaMemoriesTest
 
   deploy:
     runs-on: ubuntu-latest
