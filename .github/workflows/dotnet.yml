@@ -40,10 +40,10 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v2
         with:
-          dotnet-version: 3.1 # Adjust the version based on your project requirements
+          dotnet-version: "8.0.201" # Adjust the version based on your project requirements
 
       - name: Publish Artifact
-        run: dotnet publish -c Release -o publish
+        run: dotnet publish -c Release -o publish ./WebApp/WebApp.csproj
 
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v2
