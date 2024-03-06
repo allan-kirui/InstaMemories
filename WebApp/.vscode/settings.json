@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+  "appService.defaultWebAppToDeploy": "/subscriptions/c2347307-8f53-4835-947f-770712322d87/resourceGroups/InstaMemoriesResourceGroup/providers/Microsoft.Web/sites/InstaMemories"
+}

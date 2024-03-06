@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" href="~/css/custom-styles.css">
+
+<div class="jumbotron">
+    <h1>From a place made with 💜 </h1>
+    <p class="lead">Dedicated to the memories we make.</p>
+</div>
+
+<div class="image-container">
+    @foreach (var image in Model.Images)
+    {
+        <div class="image-box">
+            <img src="@image.ImagePath" alt="@image.Description" />
+            <p>@image.Description</p>
+        </div>
+    }
+</div>
