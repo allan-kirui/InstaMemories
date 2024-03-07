@@ -24,7 +24,7 @@ This repository contains the source code for the InstaMemories project, an appli
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/InstaMemories.git
+   git clone https://github.com/allan-kirui/InstaMemories.git
    cd InstaMemories
    ```
 
